@@ -1,0 +1,351 @@
+body{
+        background: url('blackboard.jpg') no-repeat;
+	background-size: cover;
+z-index: -1;}
+.abc{
+position:absolute;
+top:16%;
+left:29%;
+z-index: 0;
+opacity: 0;}
+button[id="restart"]
+{
+        width: 100%;
+        top:15%;
+
+  border: none;      
+	outline: none;
+	height: 60px;
+	background: #006400;
+	color: #fff;
+	font-size: 33px;
+	border-radius: 20px;
+}
+.path1 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1.5s ease-in-out forwards;
+  z-index: 1;
+}
+.path2 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1.5s ease-in-out 0.5s forwards;
+  z-index: 1;
+}
+.path3 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1.5s ease-in-out 1s forwards;
+  z-index: 1;
+}
+.path4 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 1.5s ease-in-out 1.5s forwards;
+  z-index: 1;
+}
+#acircle {
+  fill: transparent;
+  stroke: #FFFFFF;
+  stroke-width: 4;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+  z-index: 1;
+  display: none;
+}
+#bcircle {
+ fill: transparent;
+  stroke: #FFFFFF;
+  stroke-width: 4;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+  z-index: 1;
+  display: none;
+}
+#ccircle {
+  fill: transparent;
+  stroke: #FFFFFF;
+  stroke-width: 4;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+  z-index: 1;
+  display: none;
+}
+#dcircle {
+  fill: transparent;
+  stroke: #FFFFFF;
+  stroke-width: 4;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+  z-index: 1;
+  display: none;
+}
+#ecircle {
+  fill: transparent;
+  stroke: #FFFFFF;
+  stroke-width: 4;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+  z-index: 1;
+  display: none;
+}
+#fcircle {
+  fill: transparent;
+  stroke: #FFFFFF;
+  stroke-width: 4;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+  z-index: 1;
+  display: none;
+}
+#gcircle {
+  fill: transparent;
+  stroke: #FFFFFF;
+  stroke-width: 4;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+  z-index: 1;
+  display: none;
+}
+#hcircle {
+ fill: transparent;
+  stroke: #FFFFFF;
+  stroke-width: 4;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+  z-index: 1;
+  display: none;
+}
+#icircle {
+ fill: transparent;
+  stroke: #FFFFFF;
+  stroke-width: 4;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+  stroke-dashoffset: 0;
+  -webkit-animation: show100 2s;
+  animation: show100 2s;
+  z-index: 1;
+  display: none;
+}
+@keyframes show100 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#across {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;
+}
+#bcross {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;
+}
+#ccross {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;
+}
+#dcross {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;
+}
+#ecross {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;
+}
+#fcross {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;
+}
+#gcross {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;
+}
+#hcross {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;
+}
+#icross {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#animation{
+display:none;
+}
+#line1{stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;}
+#line2{stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;}
+#line3{stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;}
+#line4{stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;}
+#line5{stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;}
+#line6{stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;}
+#line7{stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;}
+#line8{stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in-out forwards;
+  z-index: 1;
+  display: none;}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.apply-shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,1%,0) scale3d(1,1,1);}
+  100% {transform: translate3d(0,3%,0) scale3d(1,1,1);}
+}
+@keyframes oops {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,0,0) scale3d(2,2,2);}
+  100% {transform: translate3d(0,0,0) scale3d(0,0,0);}
+}
+#jump {
+  transform-origin: 50% 50%;
+  animation: none ;
+  
+}
